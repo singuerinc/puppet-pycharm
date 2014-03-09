@@ -5,10 +5,17 @@
 ## Usage
 
 ```puppet
-include pycharm
+class { 'pycharm':
+  edition => 'community',
+  version => '3.1.1'
+}
+
+class { 'pycharm':
+  edition => 'professional',
+  version => '3.1.1'
+}
 ```
 
 ## Required Puppet Modules
 
 * `boxen`
-
